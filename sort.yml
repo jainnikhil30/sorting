@@ -3,4 +3,4 @@
   tasks:
   - name: report input
     debug:
-      msg: "{{ input }}"
+      msg: "{{ input.content }}"
