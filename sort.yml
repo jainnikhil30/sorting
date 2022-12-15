@@ -1,6 +1,8 @@
 ---
 - hosts: localhost
   tasks:
+
+
   - name: report input
     debug:
-      msg: "{{ input.content }}"
+      msg: "{{ input | default([]) }}"
