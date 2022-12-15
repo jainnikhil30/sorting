@@ -5,9 +5,6 @@
  
   - name: report input
     debug:
-      msg: "{{ input | string }}"
-    register: result
-
-  - debug: "{{ result.content | string }}"
-
+      msg: "{{ input.content | string }}"
+   
   
