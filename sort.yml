@@ -3,9 +3,9 @@
  # tasks:
 
  
-  - name: report input
-    debug:
-      msg: "{{ input.content | string }}"
+#  - name: report input
+ #   debug:
+  #    msg: "{{ input.content | string }}"
    
   
 ---
