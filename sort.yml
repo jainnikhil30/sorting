@@ -5,4 +5,4 @@
 
   - name: report input
     debug:
-      msg: "{{ input | default([]) }}"
+      msg: "{{ input1 | default([]) }}"
