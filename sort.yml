@@ -5,4 +5,7 @@
 
   - name: report input
     debug:
-      msg: "{{ input1 | default([]) }}"
+      msg: "{{ input | default([]) }}"
+
+  - debug: msg="{{result.content}}"
+
