@@ -23,7 +23,7 @@
      ignore_errors: yes
 
    - name: report input
-    debug:
+     debug:
       msg: "{{ input | string }}"
 
    - debug: msg="{{ result.content }}"
