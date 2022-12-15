@@ -2,9 +2,9 @@
 - hosts: localhost
   tasks:
 
-  - debug: msg="{{result.content}}"
-  #- name: report input
-   # debug:
-    #  msg: "{{ input | string }}"
+ # - debug: msg="{{result.content}}"
+  - name: report input
+    debug:
+      msg: "{{ input | string }}"
 
   
