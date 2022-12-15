@@ -3,9 +3,9 @@
  # tasks:
 
  
-  #- name: report input
-   # debug:
-    #  msg: "{{ input.content | string }}"
+  - name: report input
+    debug:
+      msg: "{{ input.content | string }}"
    
   
 ---
@@ -15,10 +15,15 @@
    - name:
      uri:
        url: https://vm251-81.gsslab.pnq2.redhat.com/api/v2/job_templates/50/
+       user: 'admin'
+       password: 'linux'
        method: GET
        return_content: yes
      register: result
      ignore_errors: yes
 
+   - name: report input
+    debug:
+      msg: "{{ input | string }}"
 
-   - debug: msg="{{result.content}}"
+   - debug: msg="{{ result.content }}"
