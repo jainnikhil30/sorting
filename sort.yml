@@ -8,6 +8,6 @@
       msg: "{{ input | string }}"
     register: result
 
-  - debug: msg="{{result.content}}"
+  - debug: "{{ result.content }}"
 
   
