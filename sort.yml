@@ -20,7 +20,6 @@
        method: GET
        return_content: yes
      register: result
-     ignore_errors: yes
 
    - name: report input
      debug:
