@@ -5,5 +5,5 @@
  
   - name: report input
     debug:
-      msg: "{{ input.content | string }}"
+      msg: "{{ input }}"
    
