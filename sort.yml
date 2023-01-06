@@ -6,4 +6,9 @@
   - name: report input
     debug:
       msg: "{{ input }}"
+  
+  - name: adding a sleep to copy the runner files
+    ansible.builtin.pause:
+      minutes: 5 
+       
    
